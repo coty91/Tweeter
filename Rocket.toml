@@ -1,0 +1,2 @@
+[global.databases.tweeter]
+url = "postgres://tweeter:tweeter@localhost:5432/tweeter"

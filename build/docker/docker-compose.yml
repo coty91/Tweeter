@@ -1,0 +1,24 @@
+version: '2'
+services:
+  # tweeter:
+  #   container_name: "tweeter"
+  #   build:
+  #     context: ../..
+  #     dockerfile: "build/docker/Dockerfile"
+  #   depends_on:
+  #     - postgres
+  #   environment:
+  #     LOG_LEVEL: "debug"
+  #     DB_HOST: "tweeter_postgres"
+  #     RAMBLER_HOST: "tweeter_postgres"
+  #   ports:
+  #     - 8080:8080
+  postgres:
+    image: postgres:11.1
+    container_name: "tweeter_postgres"
+    environment:
+      POSTGRES_USER: tweeter
+      POSTGRES_PASSWORD: tweeter
+      POSTGRES_DB: tweeter
+    ports:
+      - 5432:5432
