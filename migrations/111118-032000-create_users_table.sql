@@ -1,3 +1,8 @@
+/**
+ * Author: Coty A. Rothery
+ * Date: 11/11/2018
+ */
+ 
 create table users
 (
 	uuid uuid default uuid_generate_v4() not null
