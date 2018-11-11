@@ -1,0 +1,10 @@
+{
+    "driver": "postgresql",
+    "host": "localhost",
+    "port": 5432,
+    "user": "tweeter",
+    "password": "tweeter",
+    "database": "tweeter",
+    "directory": "migrations",
+    "table": "migrations_tweeter"
+}
