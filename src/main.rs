@@ -1,4 +1,8 @@
 #![feature(proc_macro_hygiene, decl_macro)]
+/**
+ * Author: Coty A. Rothery
+ * Date: 11/11/2018
+ */
 
 #[macro_use] extern crate rocket;
 #[macro_use] extern crate rocket_contrib;

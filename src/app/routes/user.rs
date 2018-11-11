@@ -1,3 +1,7 @@
+/**
+ * Author: Coty A. Rothery
+ * Date: 11/11/2018
+ */
 
 use rocket_contrib::json::Json;
 
