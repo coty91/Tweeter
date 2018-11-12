@@ -7,7 +7,7 @@ port = 8000
 workers = 4
 keep_alive = 5
 log = "normal"
-secret_key = "very secret"
+secret_key = "JmpLghrKhg+fsuKV3SM1lhER2NWpnQ4rQ9R6PXU3uRY="
 limits = { forms = 32768 }
 
 [staging]
@@ -16,7 +16,7 @@ port = 8000
 workers = 4
 keep_alive = 5
 log = "normal"
-secret_key = "very secret"
+secret_key = "gbf2WpkJ9+Vgbx71gbpYbzjOTnYzjLWZhlKBXGYXNlk="
 limits = { forms = 32768 }
 
 [production]
@@ -25,5 +25,5 @@ port = 8000
 workers = 4
 keep_alive = 5
 log = "critical"
-secret_key = "very secret"
+secret_key = "D+bngXtu0aQImqzjtbg830O+LlrrmFtYd5Uz73DhHSA="
 limits = { forms = 32768 }
