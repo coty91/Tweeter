@@ -12,10 +12,16 @@ pub mod app;
 
 use self::app::routes;
 use self::app::stores;
+use self::app::catchers;
 
 fn rocket() -> rocket::Rocket {
     rocket::ignite()
         .attach(stores::postgres::Tweeter::fairing())
+        .register(catchers![
+            catchers::not_found,
+            catchers::access_forbidden,
+            catchers::unprocessable_entity
+        ])
         .mount("/", routes![
             routes::home::index, 
             routes::user::signup
